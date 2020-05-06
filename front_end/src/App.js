@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import Getfibo from './components/getfibo.js'
-import Getinf from './components/getinfo.js'
+import Getfibo from './components/getfibo'
+import Getinf from './components/getinfo'
 import {
     BrowserRouter as Router,
     Switch,
