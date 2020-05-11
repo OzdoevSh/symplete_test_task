@@ -35,7 +35,6 @@ app.post('/getNumber', jsonParser, (req, res) => {
     });
 })
 
-
 app.get('/infoget', (req, res) => {
     connection.query("SELECT * FROM `testdb`.`success`", function (err, inf) {
         if(err) return console.log(err);
@@ -47,7 +46,6 @@ app.get('/infoget', (req, res) => {
         }
     });    
 })
-
 
 module.exports = app;
 
