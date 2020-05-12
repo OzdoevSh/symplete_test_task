@@ -27,6 +27,10 @@ class Getfibo extends Component{
 
 
     handleSubmit=(event) => {
+        if (this.state.number === "" || !(Number(this.state.number) >= 1 && Number(this.state.number) <= 50)) {
+            alert("Введите корректный номер числа Фибоначчи")
+            return
+        }
             fetch('/getNumber', {
                 method: 'POST',
                 headers: {
@@ -45,7 +49,7 @@ class Getfibo extends Component{
             <div className="container">
                 <div className="row justify-content-md-center">
                     <div className="col-sm-8">
-                        <input className="form-control" type="number" name="number" placeholder="Введите порядковый номер" onChange={this.handleChange}/>
+                        <input className="form-control" type="number" name="number" placeholder="Введите порядковый номер" onChange={this.handleChange} min="1" max="50"/>
                     </div>
                 </div>
 

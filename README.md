@@ -31,4 +31,3 @@ $ npm start
 Then window will be automatically opened in the browser, but if it won't you can run the project on 3000 port.
 
 
-
