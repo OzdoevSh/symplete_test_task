@@ -1,5 +1,7 @@
 # symplete_test_task
 
+Project is on "testbranch" branch.
+
 To develop the test task were selected next tools: Express as a framework for writing the test part, MySQL Workbench as a database.
 
 To start the program locally you need to install all the necessary modules by entering in backend_test_task and frontend_test_task folders terminal
@@ -23,6 +25,7 @@ To start the server in back_end folder terminal enter the following command
 ```sh
 $ npm start
 ```
+The project's back-end is run on 5000 port.
 
 To start the server in front_end folder terminal enter the following command
 ```sh
